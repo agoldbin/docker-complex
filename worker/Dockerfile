@@ -1,6 +1,6 @@
-# FROM node:lts-alpine
+# FROM node:alpine
 FROM node:13.12.0-alpine
-WORKDIR '/app'
+WORKDIR "/app"
 COPY ./package.json ./
 RUN npm install
 COPY . .
